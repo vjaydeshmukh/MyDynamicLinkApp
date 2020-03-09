@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "519775176837",
+    "firebase_url": "https://test-e6783.firebaseio.com",
+    "project_id": "test-e6783",
+    "storage_bucket": "test-e6783.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519775176837:android:a273b848136c0ef1a441ec",
+        "android_client_info": {
+          "package_name": "com.zo0okadev.mydynamiclinkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519775176837-6tik08st4v7flr1ruv2oevvekhjn74pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZPRlXNgyamgJBZjNI3gHLOrKR-WfhDgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519775176837-6tik08st4v7flr1ruv2oevvekhjn74pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

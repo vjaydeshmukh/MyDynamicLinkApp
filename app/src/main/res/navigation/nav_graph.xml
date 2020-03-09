@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/deepLinkFragment"
+        android:name="com.zo0okadev.mydynamiclinkapp.DeepLinkFragment"
+        android:label="Deep Link Fragment"
+        tools:layout="@layout/fragment_deep_link">
+        <action
+            android:id="@+id/action_deepLinkFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="item_id"
+            app:argType="integer" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.zo0okadev.com/?item_id={item_id}%26item_name={item_name}" />
+        <argument
+            android:name="item_name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zo0okadev.mydynamiclinkapp.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_deepLinkFragment"
+            app:destination="@id/deepLinkFragment" />
+    </fragment>
+</navigation>
